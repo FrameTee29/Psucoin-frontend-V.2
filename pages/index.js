@@ -1,11 +1,5 @@
+const { default: Signin } = require("./signin/signin");
 
 
-const Index = () => {
-  return (
-    <div>
-      Hello !!!
-    </div>
-  );
-}
+export default () => <Signin/>
 
-export default Index;
