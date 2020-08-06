@@ -1,8 +1,9 @@
 import React from "react";
 import App from "next/app";
-import { Provider } from 'react-redux'
-import { createWrapper } from 'next-redux-wrapper'
-import store from '../redux/store'
+import { Provider } from 'react-redux';
+import { createWrapper } from 'next-redux-wrapper';
+import store from '../redux/store';
+import 'antd/dist/antd.css';
 
 class MyApp extends App{
   render() {
