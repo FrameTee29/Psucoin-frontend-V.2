@@ -1,7 +1,8 @@
-import { Provider } from 'react-redux';
-import  store  from '../redux/store';
-import { createWrapper } from 'next-redux-wrapper';
-
+import React from "react";
+import App from "next/app";
+import { Provider } from 'react-redux'
+import { createWrapper } from 'next-redux-wrapper'
+import store from '../redux/store'
 
 class MyApp extends App{
   render() {
