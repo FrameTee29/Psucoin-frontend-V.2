@@ -27,7 +27,7 @@ const StyledWrapper = styled.body`
     overflow: hidden;
   } 
   section .container .user {
-  position:relative;
+  position:absolute;
   top:0;
   left:0;
   width:100%;
@@ -41,7 +41,7 @@ const StyledWrapper = styled.body`
     width:50%;
     height:100%;
     background: #ff0;
-    transition:0.5s;
+    transition: position 0.5s;
   }
 
   section .container .user .imgBx img{
@@ -62,7 +62,7 @@ const StyledWrapper = styled.body`
     justify-content:center;
     align-items:center;
     padding: 40px;
-    transition: 0.5s;
+    transition: position 0.5s;
   }
 
   section .container .user .formBx form h2{
@@ -96,7 +96,7 @@ const StyledWrapper = styled.body`
     max-width:100px;
     background: #677eff;
     color: #fff;
-    cursor:pointer;
+    cursor :pointer;
     font-size:14px;
     font-weight:500;
     letter-spacing:1px;
@@ -118,6 +118,11 @@ const StyledWrapper = styled.body`
     text-decoration:none;
     color: #677eff;
   }
+
+  section .container .signupBx .formBx{
+    left:100%;
+    
+  }
 `
 
 const Signin = () => {
@@ -133,7 +138,21 @@ const Signin = () => {
                 <input type="text" name="" placeholder="Username" />
                 <input type="password" name="" placeholder="Password" />
                 <input type="submit" name="" value="login" />
-                <p className="signup">Don't have an account ? <a href="#">Sign Up</a></p>
+                <p className="signup">Don't have an account ? <a href="#">Sign Up.</a></p>
+              </form>
+            </div>
+          </div>
+          <div className="user signupBx">
+            <div className="imgBx"><img src="/static/images/logosigin.png" /></div>
+            <div className="formBx">
+              <form>
+                <h2>Create an account</h2>
+                <input type="text" name="" placeholder="Username" />
+                <input type="email" name="" placeholder="Email Address" />
+                <input type="password" name="" placeholder="Create Password" />
+                <input type="password" name="" placeholder="Confirm Password" />
+                <input type="submit" name="" value="login" />
+                <p className="signup">Already have an account ? <a href="#">Sign in.</a></p>
               </form>
             </div>
           </div>
