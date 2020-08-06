@@ -1,8 +1,20 @@
-  
-import '../style.css'
+import { Provider } from 'react-redux';
+import  store  from '../redux/store';
+import { createWrapper } from 'next-redux-wrapper';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+class MyApp extends App{
+  render() {
+    const { Component , pageProps } = this.props
+    return (
+      <Provider store={store}>
+         <Component {...pageProps}></Component>
+      </Provider>
+    )
+  }
 }
 
-export default MyApp;
+const makestore = () => store;
+const wrapper = createWrapper(makestore)
+
+export default wrapper.withRedux(MyApp);

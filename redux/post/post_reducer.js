@@ -7,7 +7,7 @@ const initalState={
     error:null,
 }
 
-export const signin_reducer = (state=initalState,action) => {
+export const post_reducer = (state=initalState,action) => {
     switch(action.type){
         case types.GET_POST:
             return {
