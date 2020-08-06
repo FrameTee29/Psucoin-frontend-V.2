@@ -9,6 +9,23 @@ const StyledWrapper = styled.body`
     font-family: 'Poppins', sans-serif;
   }
 
+  section{
+    position:relative;
+    min-height:100vh;
+    background: #ecdb6b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding : 20px;
+  }
+ .container{
+    position:relative;
+    width: 900px;
+    height: 500px;
+    background: #fff;
+    box-shadow:0 15px 50px rgba(0,0,0,0.1)
+  } 
+
 
   
 `
@@ -19,7 +36,7 @@ const Signin = () => {
       <section>
         <div className="container">
           <div className="user-signBx">
-            <div className="imgBx"><img src="/static/images/coin5.jpg" /></div>
+            <div className="imgBx"><img src="/static/images/logosigin.png" /></div>
             <div className="formBx">
               <form>
                 <h2>Sign In</h2>
