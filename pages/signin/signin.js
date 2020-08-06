@@ -1,9 +1,15 @@
+import styled from 'styled-components';
+
+const StyledWrapper = styled.div`
+  
+`
 
 const Signin = () => {
     return (
-      <div>
+      <section>
         LOGIN
-      </div>
+        
+      </section>
     );
   }
   
