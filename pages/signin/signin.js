@@ -119,10 +119,10 @@ const StyledWrapper = styled.body`
     color: #677eff;
   }
 
-  section .container .signupBx .formBx{
+  /* section .container .signupBx .formBx{
     left:100%;
     
-  }
+  } */
 `
 
 const Signin = () => {
@@ -142,7 +142,7 @@ const Signin = () => {
               </form>
             </div>
           </div>
-          <div className="user signupBx">
+          {/* <div className="user signupBx">
             <div className="imgBx"><img src="/static/images/logosigin.png" /></div>
             <div className="formBx">
               <form>
@@ -155,7 +155,7 @@ const Signin = () => {
                 <p className="signup">Already have an account ? <a href="#">Sign in.</a></p>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </StyledWrapper>
