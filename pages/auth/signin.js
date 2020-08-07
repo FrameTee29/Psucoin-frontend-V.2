@@ -146,7 +146,7 @@ const Signin = () => {
                 <input type="text" name="" placeholder="Username" />
                 <input type="password" name="" placeholder="Password" />
                 <input type="submit" name="" value="login" />
-                <p className="signup">Don't have an account ? <a href="#">Sign Up.</a></p>
+                <p className="signup">Don't have an account ? <a href="/auth/signup">Sign Up.</a></p>
               </form>
             </div>
           </div>

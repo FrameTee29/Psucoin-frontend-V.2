@@ -12,7 +12,7 @@ const StyledWrapper = styled.body`
   section{
     position:relative;
     min-height:100vh;
-    background: #ecdb6b;
+    background: #ca1b32;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -158,11 +158,11 @@ const signup = () => {
                 <input type="email" name="" placeholder="Email Address" />
                 <input type="password" name="" placeholder="Create Password" />
                 <input type="password" name="" placeholder="Confirm Password" />
-                <input type="submit" name="" value="login" />
-                <p className="signup">Already have an account ? <a href="#">Sign in.</a></p>
+                <input type="submit" name="" value="create" />
+                <p className="signup">Already have an account ? <a href="/">Sign in.</a></p>
               </form>
             </div>
-            <div className="imgBx"><img src="/static/images/logosigin.png" /></div>
+            <div className="imgBx"><img src="/static/images/logosignup.jpg" /></div>
           </div>
     
         </div>
