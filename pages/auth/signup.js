@@ -106,7 +106,7 @@ const StyledWrapper = styled.body`
   section .container .user .formBx form .signup{
     position:relative;
     margin-top:20px;
-    font-size:12px;
+    font-size:11px;
     letter-spacing:1px;
     color:#555;
     text-transform:uppercase;
