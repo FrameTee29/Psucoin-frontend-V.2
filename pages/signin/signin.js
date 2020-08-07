@@ -119,10 +119,18 @@ const StyledWrapper = styled.body`
     color: #677eff;
   }
 
-  /* section .container .signupBx .formBx{
-    left:100%;
-    
-  } */
+  @media (max-width: 991px){
+    section .container{
+      max-width:400px;
+    }
+    section .container .imgBx{
+      display:none;
+    }
+    section .container .user .formBx{
+      width:100%;
+    }
+  }
+ 
 `
 
 const Signin = () => {
