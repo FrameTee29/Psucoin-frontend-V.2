@@ -23,7 +23,7 @@ const StyledWrapper = styled.body`
     width: 900px;
     height: 500px;
     background: #fff;
-    box-shadow:0 15px 50px rgba(0,0,0,0.1);
+    box-shadow:0 15px 50px rgba(0,0,0,0.2);
     overflow: hidden;
   } 
   section .container .user {
