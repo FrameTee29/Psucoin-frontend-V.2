@@ -11,7 +11,7 @@ export const login_reducer = (state=initalState,action) => {
             return {
                 ...state ,
                 username: action.payload,
-                password: action.payload,
+                password: action.payload, // payload จะส่งค่ามาจาก Action อีกทีนึง
             }
         default:
             return state;
