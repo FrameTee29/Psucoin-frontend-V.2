@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {useSelector,useDispatch} from 'react-redux';
 
 const StyledWrapper = styled.body`
 
@@ -134,6 +135,11 @@ const StyledWrapper = styled.body`
 `
 
 const Signin = () => {
+
+  const dispatch = useDispatch();
+  const login = useSelector(state => state.login);
+
+  console.log(login);
   return (
     <StyledWrapper>
       <section>
@@ -149,22 +155,7 @@ const Signin = () => {
                 <p className="signup">Don't have an account ? <a href="/auth/signup">Sign Up.</a></p>
               </form>
             </div>
-          </div>
-          {/* <div className="user signupBx">
-            <div className="imgBx"><img src="/static/images/logosigin.png" /></div>
-            <div className="formBx">
-              <form>
-                <h2>Create an account</h2>
-                <input type="text" name="" placeholder="Username" />
-                <input type="email" name="" placeholder="Email Address" />
-                <input type="password" name="" placeholder="Create Password" />
-                <input type="password" name="" placeholder="Confirm Password" />
-                <input type="submit" name="" value="login" />
-                <p className="signup">Already have an account ? <a href="#">Sign in.</a></p>
-              </form>
-            </div>
-          </div> */}
-    
+          </div> 
         </div>
       </section>
     </StyledWrapper>

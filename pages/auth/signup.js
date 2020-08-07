@@ -138,18 +138,6 @@ const signup = () => {
     <StyledWrapper>
       <section>
         <div className="container">
-          {/* <div className="user signBx">
-            <div className="imgBx"><img src="/static/images/logosigin.png" /></div>
-            <div className="formBx">
-              <form>
-                <h2>Sign In</h2>
-                <input type="text" name="" placeholder="Username" />
-                <input type="password" name="" placeholder="Password" />
-                <input type="submit" name="" value="login" />
-                <p className="signup">Don't have an account ? <a href="#">Sign Up.</a></p>
-              </form>
-            </div>
-          </div> */}
           <div className="user signupBx">
             <div className="formBx">
               <form>
