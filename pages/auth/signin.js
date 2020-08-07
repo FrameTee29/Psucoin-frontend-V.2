@@ -41,7 +41,7 @@ const StyledWrapper = styled.body`
     width:50%;
     height:100%;
     background: #ff0;
-    transition: position 0.5s;
+    
   }
 
   section .container .user .imgBx img{
@@ -62,7 +62,7 @@ const StyledWrapper = styled.body`
     justify-content:center;
     align-items:center;
     padding: 40px;
-    transition: position 0.5s;
+    
   }
 
   section .container .user .formBx form h2{
@@ -100,7 +100,7 @@ const StyledWrapper = styled.body`
     font-size:14px;
     font-weight:500;
     letter-spacing:1px;
-    transition: 0.5s;
+   
   }
 
   section .container .user .formBx form .signup{
